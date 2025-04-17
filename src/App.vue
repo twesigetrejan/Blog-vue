@@ -1,47 +1,27 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { ref } from "vue";
+
+const name = ref("Trejan_dev");
+const channel = ref("YouTube");
+const hack = onclick(() => {
+  alert("You clicked me!");
+});
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
+    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
+    <h1 class="bg-red-400 flex">Hello {{ name }}</h1>
+    <h2 v-text="channel"></h2>
+    <h3 v-text="hack"></h3>
+    <!-- <div class="wrapper">
       <HelloWorld msg="You did it well!" />
-    </div>
+    </div> -->
   </header>
 
-  <main>
+  <!-- <main>
     <TheWelcome />
-  </main>
+  </main> -->
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style scoped></style>
