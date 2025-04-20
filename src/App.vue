@@ -1,28 +1,20 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
-const name = ref("Trejan_dev");
-const channel = ref("YouTube");
-const hack = onclick(() => {
-  alert("You clicked me!");
+// reactive state
+const count = ref(0);
+
+const increment = () => {
+  count.value++;
+};
+// lifecycle hooks
+onMounted(() => {
+  console.log(`The initial count is ${count.value}.`);
 });
 </script>
 
 <template>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
-    <h1 class="bg-red-400 flex">Hello {{ name }}</h1>
-    <h2 v-text="channel"></h2>
-    <h3 v-text="hack"></h3>
-    <h4 class="" ></h4>
-    <!-- <div class="wrapper">
-      <HelloWorld msg="You did it well!" />
-    </div> -->
-  </header>
-
-  <!-- <main>
-    <TheWelcome />
-  </main> -->
+  <button @click="increment" className="bg-green-500 p-10">
+    Count is: {{ count }}
+  </button>
 </template>
-
-<style scoped></style>
