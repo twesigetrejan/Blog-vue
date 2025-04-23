@@ -50,10 +50,11 @@ onMounted(() => {
       Add
     </button>
   </form>
-
+  <h2>Tasks</h2>
   <ul class="mt-4">
     <li v-for="task in tasks" :key="task.id">
       {{ task.title }}
+
     </li>
   </ul>
 </template>
