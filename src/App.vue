@@ -6,6 +6,11 @@ const count = ref(0);
 const newTask = ref("");
 const tasks = ref([]);
 
+const books = ref([
+  { id: 1, title: "The Great Gatsby" },
+  { id: 2, title: "To Kill a Mockingbird" },
+  { id: 3, title: "1984" },
+]);
 const increment = () => {
   count.value++;
 };
@@ -50,11 +55,18 @@ onMounted(() => {
       Add
     </button>
   </form>
-  <h2>Tasks</h2>
+
+  <div class="">
+    <h3 class="">Books list</h3>
+    <ul class="mt-4">
+      <li v-for="book in books" :key="book.id">{{ book.title }}</li>
+    </ul>
+  </div>
+  <!-- <h2>Tasks</h2>
   <ul class="mt-4">
     <li v-for="task in tasks" :key="task.id">
-      {{ task.title }}
+      {{ task.title }} -->
 
-    </li>
-  </ul>
+  <!-- </li>
+  </ul> -->
 </template>
