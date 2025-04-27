@@ -2,11 +2,12 @@
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue";
 import Homecards from "./components/Homecards.vue";
+import Joblistings from "./components/Joblistings.vue";
 </script>
 
 <template>
-  <h2 class=""></h2>
   <Navbar />
   <Hero />
   <Homecards />
+  <Joblistings />
 </template>
