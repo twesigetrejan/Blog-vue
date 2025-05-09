@@ -75,8 +75,8 @@
                 <option value="$100K - $125K">$100 - $125K</option>
                 <option value="$125K - $150K">$125 - $150K</option>
                 <option value="$150K - $175K">$150 - $175K</option>
-                <option value="$175K - $200K">$175 - $200K</option>
-                <option value="Over $200K">Over $200K</option>
+                <option value="$175K - $200K">$175 - $250K</option>
+                <option value="Over $200K">Over $250K</option>
               </select>
             </div>
 
