@@ -30,7 +30,7 @@
 
             <div class="mb-4">
               <label class="block text-gray-700 font-bold mb-2"
-                >Job Listing Name</label
+                >Job Listing</label
               >
               <input
                 type="text"
